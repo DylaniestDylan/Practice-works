@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 module.exports = {
   root: true,
   env: {
@@ -20,6 +19,4 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   }
-
 }
-

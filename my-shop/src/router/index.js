@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import CheckOut from '../views/CheckOut.vue'
+import Checkout from '../views/Checkout.vue'
 
 const routes = [
   {
@@ -10,8 +10,8 @@ const routes = [
   },
   {
     path: '/checkout',
-    name: 'CheckOut',
-    component: CheckOut
+    name: 'Checkout',
+    component: Checkout
   }
 ]
 

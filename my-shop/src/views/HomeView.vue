@@ -8,26 +8,18 @@
 <script>
 import ProductList from '@/components/ProductList'
 import RangeSelector from '@/components/RangeSelector'
-
 export default {
   name: 'HomeView',
   data: function () {
     return {
       max: 50,
-      cart: [],
-      products: []
+      cart: []
     }
   },
+  props: ['products'],
   components: {
-    ProductList,
-    RangeSelector
-  },
-  created() {
-    fetch('https://hplussport.com/api/products/order/price')
-      .then(response => response.json())
-      .then(data => {
-        this.products = data
-      })
+    RangeSelector,
+    ProductList
   },
   computed: {
     filteredProducts() {

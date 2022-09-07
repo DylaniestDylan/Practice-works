@@ -2,7 +2,7 @@
 <template>
   <div class="col-2 m-auto">
     <button
-      @click="$parent.$parent.$emit('addToCart', item)"
+      @click="this.$parent.$parent.$parent.$parent.$emit('addItem', item)"
       class="btn btn-success"
     >
       +
@@ -21,10 +21,12 @@
 </template>
 
 <script>
+import Curr from '@/components/Curr'
 export default {
   props: ['item'],
-  emits: ['addToCart']
+  emits: ['addItem'],
+  components: {
+    Curr
+  }
 }
 </script>
-
-<style></style>

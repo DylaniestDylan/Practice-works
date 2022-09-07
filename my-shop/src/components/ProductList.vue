@@ -26,12 +26,10 @@ export default {
 .products-leave-active {
   transition: all 0.5s ease-in-out;
 }
-
 .products-enter-from {
   opacity: 0;
   transform: translateX(300px);
 }
-
 .products-leave-to {
   opacity: 0;
   transform: translateX(-300px);
